@@ -1,6 +1,9 @@
 import type { Metadata } from "next";
-import "./globals.css";
+
 import { ClerkProvider } from "@clerk/nextjs";
+import { ModalProvider } from "@/providers/modal-provider";
+
+import "./globals.css";
 
 export const metadata: Metadata = {
   title: "Admin Dashboard",
@@ -15,7 +18,10 @@ export default function RootLayout({
   return (
     <ClerkProvider>
       <html lang="en">
-        <body>{children}</body>
+        <body>
+          <ModalProvider />
+          {children}
+        </body>
       </html>
     </ClerkProvider>
   );
