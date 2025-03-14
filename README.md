@@ -1,36 +1,31 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# E-Commerce Platform
 
-## Getting Started
+## Project Overview
 
-First, run the development server:
+Full-stack e-commerce platform built with latest Nextjs 15. The project is currently in development and aims to provide a seamless shopping experience for users while offering a robust admin panel for store management.
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
-```
+## 🛠️ Technologies Used
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+- **Next.js 15** – For server-side rendering and a seamless React-based UI.
+- **TypeScript** – Ensures type safety and better developer experience.
+- **Clerk** – Provides secure and flexible authentication.
+- **Shadcn** – For reusable UI components with a focus on accessibility.
+- **Tailwind CSS** – Utility-first CSS framework for modern styling.
+- **Prisma** – ORM for database management.
+- **MongoDB & MySQL** – Databases for handling product data and transactions.
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+## 📌 Features
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+### User Panel
 
-## Learn More
+- Browse products and categories.
+- Add products to the cart and complete purchases.
+- Secure authentication using Clerk.
+- Order history and tracking.
 
-To learn more about Next.js, take a look at the following resources:
+### Admin Panel
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
-
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
-
-## Deploy on Vercel
-
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
-
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+- Create and manage multiple stores.
+- Add, update, and delete products and categories.
+- View store statistics and sales analytics.
+- Manage user permissions and roles.

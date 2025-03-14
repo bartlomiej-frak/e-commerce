@@ -34,7 +34,7 @@ export const StoreSwitcher = ({ className, items = [] }: StoreSwitcherProps) => 
     value: item.id,
   }));
 
-  const currentStore = formattedItems.find((item) => item.value === params.storeid);
+  const currentStore = formattedItems.find((item) => item.value === params.storeId);
 
   const [open, setOpen] = useState(false);
 
@@ -66,12 +66,18 @@ export const StoreSwitcher = ({ className, items = [] }: StoreSwitcherProps) => 
             <CommandEmpty>No store found.</CommandEmpty>
             <CommandGroup heading="Stores">
               {formattedItems.map((store) => (
-                <CommandItem key={store.value} onSelect={() => onStoreSelect(store)} className="text-sm">
+                <CommandItem
+                  key={store.value}
+                  onSelect={() => onStoreSelect(store)}
+                  className="text-sm"
+                >
                   <StoreIcon className="mr-2 h-4 w-4" />
                   {store.label}
                   <Check
                     className={
-                      (cn("ml-auto h-4 w-4"), currentStore?.value === store.value) ? "opacity-100" : "opacity-0"
+                      (cn("ml-auto h-4 w-4"), currentStore?.value === store.value)
+                        ? "opacity-100"
+                        : "opacity-0"
                     }
                   />
                 </CommandItem>
